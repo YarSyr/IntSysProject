@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Материалы</title>
+</head>
+<body>
+<h2>Материалы на складе</h2>
+<a href="/add"><button>Добавить материал</button></a>
+<table>
+    <thead>
+    <tr>
+        <th>Название</th>
+        <th>Количество</th>
+        <th>Изменить</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="material : ${materials}">
+        <td th:text="${material.name}"></td>
+        <td th:text="${material.quantity}"></td>
+        <td>
+            <form action="/adjust" method="post">
+                <input type="hidden" name="materialId" th:value="${material.id}">
+                <input type="number" name="quantityChange" value="0">
+                <button type="submit" name="action" value="decrease">Списать</button>
+                <button type="submit" name="action" value="increase">Зачислить</button>
+            </form>
+        </td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
