@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="_material_8java" kind="file" language="Java">
+    <compoundname>Material.java</compoundname>
+    <innerclass refid="classcom_1_1example_1_1demo_1_1_material" prot="public">com::example::demo::Material</innerclass>
+    <innernamespace refid="namespacecom_1_1example_1_1demo">com::example::demo</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">package<sp/></highlight><highlight class="normal">com.example.demo;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>jakarta.persistence.Entity;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>jakarta.persistence.GeneratedValue;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>jakarta.persistence.GenerationType;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>jakarta.persistence.Table;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>org.springframework.data.annotation.Id;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal">@Entity</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">@Table(name<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;materials&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="15" refid="classcom_1_1example_1_1demo_1_1_material" refkind="compound"><highlight class="normal">public<sp/>class<sp/><ref refid="classcom_1_1example_1_1demo_1_1_material" kindref="compound">Material</ref><sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>@jakarta.persistence.Id</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>@Id</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>@GeneratedValue(strategy<sp/>=<sp/>GenerationType.IDENTITY)</highlight></codeline>
+<codeline lineno="20" refid="classcom_1_1example_1_1demo_1_1_material_1a7935ef4cd2e79364d1d1728eff2c7a15" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>public<sp/>Integer<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="22" refid="classcom_1_1example_1_1demo_1_1_material_1ad0722b08ee17cb9d482ede7137ea0798" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>public<sp/>String<sp/>name;</highlight></codeline>
+<codeline lineno="24" refid="classcom_1_1example_1_1demo_1_1_material_1a08615d7f770929a9e10310d17440f4d3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>public<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>quantity;</highlight></codeline>
+<codeline lineno="26" refid="classcom_1_1example_1_1demo_1_1_material_1a48b1cd0b31f926effc370577170cd853" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>public<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setId(Integer<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this.id<sp/>=<sp/>id;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="30" refid="classcom_1_1example_1_1demo_1_1_material_1a57dd611e25828c6249de98a3c3c28dfa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classcom_1_1example_1_1demo_1_1_material_1a57dd611e25828c6249de98a3c3c28dfa" kindref="member">setName</ref>(String<sp/>name)<sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this.name<sp/>=<sp/>name;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="34" refid="classcom_1_1example_1_1demo_1_1_material_1ae2f22e37e1288827d741af447ef50c81" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>Integer<sp/><ref refid="classcom_1_1example_1_1demo_1_1_material_1ae2f22e37e1288827d741af447ef50c81" kindref="member">getId</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>id;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="38" refid="classcom_1_1example_1_1demo_1_1_material_1aa94af242df83f12455b7ab8414b76737" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>String<sp/><ref refid="classcom_1_1example_1_1demo_1_1_material_1aa94af242df83f12455b7ab8414b76737" kindref="member">getName</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>name;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="42" refid="classcom_1_1example_1_1demo_1_1_material_1afb67179c1ab032e49ab4cd60165ab077" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classcom_1_1example_1_1demo_1_1_material_1afb67179c1ab032e49ab4cd60165ab077" kindref="member">setQuantity</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i)<sp/>{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this.quantity<sp/>=<sp/>i;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="46" refid="classcom_1_1example_1_1demo_1_1_material_1a784eb4fcc605628f5a233b7dfd6fa757" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>Integer<sp/><ref refid="classcom_1_1example_1_1demo_1_1_material_1a784eb4fcc605628f5a233b7dfd6fa757" kindref="member">getQuantity</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>quantity;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>@Override</highlight></codeline>
+<codeline lineno="51" refid="classcom_1_1example_1_1demo_1_1_material_1afeb1cd6f93b77ed42816deb2072c30b6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>String<sp/><ref refid="classcom_1_1example_1_1demo_1_1_material_1afeb1cd6f93b77ed42816deb2072c30b6" kindref="member">toString</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this.name<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;<sp/>+<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>this.quantity<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="src/main/java/com/example/demo/Material.java"/>
+  </compounddef>
+</doxygen>

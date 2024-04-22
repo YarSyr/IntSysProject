@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__material_repository_8java" xml:lang="en-US">
+<title>src/main/java/com/example/demo/MaterialRepository.java File Reference</title>
+<indexterm><primary>src/main/java/com/example/demo/MaterialRepository.java</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>interface <link linkend="_interfacecom_1_1example_1_1demo_1_1_material_repository">com.example.demo.MaterialRepository</link></para>
+
+<para>Репозиторий для работы с базой данных </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Packages    </title>
+        <itemizedlist>
+            <listitem><para>package <link linkend="_namespacecom_1_1example_1_1demo">com.example.demo</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

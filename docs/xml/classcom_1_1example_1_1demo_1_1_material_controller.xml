@@ -1,0 +1,169 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1example_1_1demo_1_1_material_controller" kind="class" language="Java" prot="public">
+    <compoundname>com::example::demo::MaterialController</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1example_1_1demo_1_1_material_controller_1a16719577d8fc563d985130b5d95e0f21" prot="private" static="no" mutable="no">
+        <type><ref refid="interfacecom_1_1example_1_1demo_1_1_material_repository" kindref="compound">MaterialRepository</ref></type>
+        <definition>MaterialRepository com.example.demo.MaterialController.materialRepository</definition>
+        <argsstring></argsstring>
+        <name>materialRepository</name>
+        <qualifiedname>com.example.demo.MaterialController.materialRepository</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/example/demo/MaterialController.java" line="19" column="32" bodyfile="src/main/java/com/example/demo/MaterialController.java" bodystart="19" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1example_1_1demo_1_1_material_controller_1a51e69ea1616ecc410837dc7f9951c1ce" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.example.demo.MaterialController.listMaterials</definition>
+        <argsstring>(Model model)</argsstring>
+        <name>listMaterials</name>
+        <qualifiedname>com.example.demo.MaterialController.listMaterials</qualifiedname>
+        <param>
+          <type>Model</type>
+          <declname>model</declname>
+        </param>
+        <briefdescription>
+<para>Метод, используемый при обработке запросов </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Принимает</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>на вход объект модели </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Возвращает название MVC шаблона </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/example/demo/MaterialController.java" line="26" column="19" bodyfile="src/main/java/com/example/demo/MaterialController.java" bodystart="26" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1example_1_1demo_1_1_material_controller_1ae2639165f86531f0c71a1af0963521d2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.example.demo.MaterialController.adjustMaterials</definition>
+        <argsstring>(Model model, @RequestParam Long materialId, @RequestParam int quantityChange)</argsstring>
+        <name>adjustMaterials</name>
+        <qualifiedname>com.example.demo.MaterialController.adjustMaterials</qualifiedname>
+        <param>
+          <type>Model</type>
+          <declname>model</declname>
+        </param>
+        <param>
+          <type>@RequestParam Long</type>
+          <declname>materialId</declname>
+        </param>
+        <param>
+          <type>@RequestParam int</type>
+          <declname>quantityChange</declname>
+        </param>
+        <briefdescription>
+<para>Метод, используемый при обработке запросов на настройку </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Принимает</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>на вход объект модели а также параметры Post запроса </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Возвращает указатель перенаправления на гравную страницу </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/example/demo/MaterialController.java" line="37" column="19" bodyfile="src/main/java/com/example/demo/MaterialController.java" bodystart="37" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1example_1_1demo_1_1_material_controller_1af3d59639d102bcbbb47e0c176a042bd1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.example.demo.MaterialController.showAddMaterialForm</definition>
+        <argsstring>(Model model)</argsstring>
+        <name>showAddMaterialForm</name>
+        <qualifiedname>com.example.demo.MaterialController.showAddMaterialForm</qualifiedname>
+        <param>
+          <type>Model</type>
+          <declname>model</declname>
+        </param>
+        <briefdescription>
+<para>Метод, используемый при обработке запросов на добавление </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Принимает</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>на вход объект модели а также параметры Post запроса </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Возвращает название MVC шаблона </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/example/demo/MaterialController.java" line="52" column="19" bodyfile="src/main/java/com/example/demo/MaterialController.java" bodystart="52" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1example_1_1demo_1_1_material_controller_1a0538514bc1dd11a61e279e5f5d4d0948" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.example.demo.MaterialController.addMaterial</definition>
+        <argsstring>(@ModelAttribute Material material)</argsstring>
+        <name>addMaterial</name>
+        <qualifiedname>com.example.demo.MaterialController.addMaterial</qualifiedname>
+        <param>
+          <type>@ModelAttribute <ref refid="classcom_1_1example_1_1demo_1_1_material" kindref="compound">Material</ref></type>
+          <declname>material</declname>
+        </param>
+        <briefdescription>
+<para>Метод, используемый при обработке запроса на добавление </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Принимает</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>на вход объект модели а также параметры Post запроса </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Возвращает указатель перенаправления на гравную страницу </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/example/demo/MaterialController.java" line="62" column="19" bodyfile="src/main/java/com/example/demo/MaterialController.java" bodystart="62" bodyend="65"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Класс контроллера для обработки HTTP запросов </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/main/java/com/example/demo/MaterialController.java" line="17" column="7" bodyfile="src/main/java/com/example/demo/MaterialController.java" bodystart="17" bodyend="69"/>
+    <listofallmembers>
+      <member refid="classcom_1_1example_1_1demo_1_1_material_controller_1a0538514bc1dd11a61e279e5f5d4d0948" prot="public" virt="non-virtual"><scope>com::example::demo::MaterialController</scope><name>addMaterial</name></member>
+      <member refid="classcom_1_1example_1_1demo_1_1_material_controller_1ae2639165f86531f0c71a1af0963521d2" prot="public" virt="non-virtual"><scope>com::example::demo::MaterialController</scope><name>adjustMaterials</name></member>
+      <member refid="classcom_1_1example_1_1demo_1_1_material_controller_1a51e69ea1616ecc410837dc7f9951c1ce" prot="public" virt="non-virtual"><scope>com::example::demo::MaterialController</scope><name>listMaterials</name></member>
+      <member refid="classcom_1_1example_1_1demo_1_1_material_controller_1a16719577d8fc563d985130b5d95e0f21" prot="private" virt="non-virtual"><scope>com::example::demo::MaterialController</scope><name>materialRepository</name></member>
+      <member refid="classcom_1_1example_1_1demo_1_1_material_controller_1af3d59639d102bcbbb47e0c176a042bd1" prot="public" virt="non-virtual"><scope>com::example::demo::MaterialController</scope><name>showAddMaterialForm</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

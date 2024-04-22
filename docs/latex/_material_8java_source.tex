@@ -1,0 +1,47 @@
+\doxysection{Material.\+java}
+\label{_material_8java_source}\index{src/main/java/com/example/demo/Material.java@{src/main/java/com/example/demo/Material.java}}
+\textbf{ Go to the documentation of this file.}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{keyword}{package\ }com.example.demo;}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{keyword}{import}\ jakarta.persistence.Entity;}
+\DoxyCodeLine{00004\ \textcolor{keyword}{import}\ jakarta.persistence.GeneratedValue;}
+\DoxyCodeLine{00005\ \textcolor{keyword}{import}\ jakarta.persistence.GenerationType;}
+\DoxyCodeLine{00006\ \textcolor{keyword}{import}\ jakarta.persistence.Table;}
+\DoxyCodeLine{00007\ \textcolor{keyword}{import}\ org.springframework.data.annotation.Id;}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00013\ @Entity}
+\DoxyCodeLine{00014\ @Table(name\ =\ \textcolor{stringliteral}{"{}materials"{}})}
+\DoxyCodeLine{00015\ public\ class\ Material\ \{}
+\DoxyCodeLine{00016\ \ \ \ \ @jakarta.persistence.Id}
+\DoxyCodeLine{00017\ \ \ \ \ @Id}
+\DoxyCodeLine{00018\ \ \ \ \ @GeneratedValue(strategy\ =\ GenerationType.IDENTITY)}
+\DoxyCodeLine{00020\ \ \ \ \ public\ Integer\ \textcolor{keywordtype}{id};}
+\DoxyCodeLine{00022\ \ \ \ \ public\ String\ name;}
+\DoxyCodeLine{00024\ \ \ \ \ public\ \textcolor{keywordtype}{int}\ quantity;}
+\DoxyCodeLine{00026\ \ \ \ \ public\ \textcolor{keywordtype}{void}\ setId(Integer\ \textcolor{keywordtype}{id})\ \{}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ this.id\ =\ id;}
+\DoxyCodeLine{00028\ \ \ \ \ \}}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ setName(String\ name)\ \{}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ this.name\ =\ name;}
+\DoxyCodeLine{00032\ \ \ \ \ \}}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keyword}{public}\ Integer\ getId()\ \{}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ id;}
+\DoxyCodeLine{00036\ \ \ \ \ \}}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keyword}{public}\ String\ getName()\ \{}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ name;}
+\DoxyCodeLine{00040\ \ \ \ \ \}}
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ setQuantity(\textcolor{keywordtype}{int}\ i)\ \{}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ this.quantity\ =\ i;}
+\DoxyCodeLine{00044\ \ \ \ \ \}}
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keyword}{public}\ Integer\ getQuantity()\ \{}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ quantity;}
+\DoxyCodeLine{00048\ \ \ \ \ \}}
+\DoxyCodeLine{00050\ \ \ \ \ @Override}
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keyword}{public}\ String\ toString()\ \{}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ this.name\ +\ \textcolor{stringliteral}{"{}\ +\ "{}}\ +\ this.quantity\ +\ \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{00053\ \ \ \ \ \}}
+\DoxyCodeLine{00054\ \}}
+
+\end{DoxyCode}

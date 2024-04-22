@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__demo_application_8java_source" xml:lang="en-US">
+<title>DemoApplication.java</title>
+<indexterm><primary>src/main/java/com/example/demo/DemoApplication.java</primary></indexterm>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered"><anchor xml:id="__demo_application_8java_source_1l00001"/><link linkend="_namespacecom_1_1example_1_1demo">00001</link> <emphasis role="keyword">package&#32;</emphasis>com.example.demo;
+<anchor xml:id="__demo_application_8java_source_1l00002"/>00002 
+<anchor xml:id="__demo_application_8java_source_1l00003"/>00003 <emphasis role="keyword">import</emphasis>&#32;org.springframework.boot.SpringApplication;
+<anchor xml:id="__demo_application_8java_source_1l00004"/>00004 <emphasis role="keyword">import</emphasis>&#32;org.springframework.boot.autoconfigure.SpringBootApplication;
+<anchor xml:id="__demo_application_8java_source_1l00008"/>00008 @SpringBootApplication
+<anchor xml:id="__demo_application_8java_source_1l00009"/><link linkend="_classcom_1_1example_1_1demo_1_1_demo_application">00009</link> <emphasis role="keyword">public</emphasis>&#32;<emphasis role="keyword">class&#32;</emphasis><link linkend="_classcom_1_1example_1_1demo_1_1_demo_application">DemoApplication</link>&#32;{
+<anchor xml:id="__demo_application_8java_source_1l00015"/><link linkend="_classcom_1_1example_1_1demo_1_1_demo_application_1a8a565fb84a5ce2745221d564733e61fd">00015</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classcom_1_1example_1_1demo_1_1_demo_application_1a8a565fb84a5ce2745221d564733e61fd">main</link>(String[]&#32;args)&#32;{
+<anchor xml:id="__demo_application_8java_source_1l00016"/>00016 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;SpringApplication.run(<link linkend="_classcom_1_1example_1_1demo_1_1_demo_application">DemoApplication</link>.class,&#32;args);
+<anchor xml:id="__demo_application_8java_source_1l00017"/>00017 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__demo_application_8java_source_1l00018"/>00018 
+<anchor xml:id="__demo_application_8java_source_1l00019"/>00019 }
+</programlisting></section>

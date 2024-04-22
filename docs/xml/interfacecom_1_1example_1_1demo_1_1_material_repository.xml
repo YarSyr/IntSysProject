@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="interfacecom_1_1example_1_1demo_1_1_material_repository" kind="interface" language="Java" prot="public">
+    <compoundname>com::example::demo::MaterialRepository</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">org::springframework::data::jpa::repository::JpaRepository&lt; Material, Long &gt;</basecompoundref>
+    <briefdescription>
+<para>Репозиторий для работы с базой данных </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>com.example.demo.MaterialRepository</label>
+        <link refid="interfacecom_1_1example_1_1demo_1_1_material_repository"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>JpaRepository&lt; Material, Long &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.example.demo.MaterialRepository</label>
+        <link refid="interfacecom_1_1example_1_1demo_1_1_material_repository"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>JpaRepository&lt; Material, Long &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="src/main/java/com/example/demo/MaterialRepository.java" line="7" column="18" bodyfile="src/main/java/com/example/demo/MaterialRepository.java" bodystart="7" bodyend="8"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

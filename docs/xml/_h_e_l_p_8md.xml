@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="_h_e_l_p_8md" kind="file" language="Markdown">
+    <compoundname>HELP.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">#<sp/>Getting<sp/>Started</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Reference<sp/>Documentation</highlight></codeline>
+<codeline><highlight class="normal">For<sp/>further<sp/>reference,<sp/>please<sp/>consider<sp/>the<sp/>following<sp/>sections:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">*<sp/>[Official<sp/>Apache<sp/>Maven<sp/>documentation](https://maven.apache.org/guides/index.html)</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>[Spring<sp/>Boot<sp/>Maven<sp/>Plugin<sp/>Reference<sp/>Guide](https://docs.spring.io/spring-boot/docs/3.2.5/maven-plugin/reference/html/)</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>[Create<sp/>an<sp/>OCI<sp/>image](https://docs.spring.io/spring-boot/docs/3.2.5/maven-plugin/reference/html/#build-image)</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>[Spring<sp/>Web](https://docs.spring.io/spring-boot/docs/3.2.5/reference/htmlsingle/index.html#web)</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>[Spring<sp/>Data<sp/>JPA](https://docs.spring.io/spring-boot/docs/3.2.5/reference/htmlsingle/index.html#data.sql.jpa-and-spring-data)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Guides</highlight></codeline>
+<codeline><highlight class="normal">The<sp/>following<sp/>guides<sp/>illustrate<sp/>how<sp/>to<sp/>use<sp/>some<sp/>features<sp/>concretely:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">*<sp/>[Building<sp/>a<sp/>RESTful<sp/>Web<sp/>Service](https://spring.io/guides/gs/rest-service/)</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>[Serving<sp/>Web<sp/>Content<sp/>with<sp/>Spring<sp/>MVC](https://spring.io/guides/gs/serving-web-content/)</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>[Building<sp/>REST<sp/>services<sp/>with<sp/>Spring](https://spring.io/guides/tutorials/rest/)</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>[Accessing<sp/>Data<sp/>with<sp/>JPA](https://spring.io/guides/gs/accessing-data-jpa/)</highlight></codeline>
+<codeline></codeline>
+    </programlisting>
+    <location file="HELP.md"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,121 @@
+\doxysection{com.\+example.\+demo.\+Material\+Controller Class Reference}
+\label{classcom_1_1example_1_1demo_1_1_material_controller}\index{com.example.demo.MaterialController@{com.example.demo.MaterialController}}
+
+
+Класс контроллера для обработки HTTP запросов  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+String \textbf{ list\+Materials} (Model model)
+\begin{DoxyCompactList}\small\item\em Метод, используемый при обработке запросов \end{DoxyCompactList}\item 
+String \textbf{ adjust\+Materials} (Model model, @Request\+Param Long material\+Id, @Request\+Param int quantity\+Change)
+\begin{DoxyCompactList}\small\item\em Метод, используемый при обработке запросов на настройку \end{DoxyCompactList}\item 
+String \textbf{ show\+Add\+Material\+Form} (Model model)
+\begin{DoxyCompactList}\small\item\em Метод, используемый при обработке запросов на добавление \end{DoxyCompactList}\item 
+String \textbf{ add\+Material} (@Model\+Attribute \textbf{ Material} material)
+\begin{DoxyCompactList}\small\item\em Метод, используемый при обработке запроса на добавление \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс контроллера для обработки HTTP запросов 
+
+Definition at line \textbf{ 17} of file \textbf{ Material\+Controller.\+java}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\label{classcom_1_1example_1_1demo_1_1_material_controller_a0538514bc1dd11a61e279e5f5d4d0948} 
+\index{com.example.demo.MaterialController@{com.example.demo.MaterialController}!addMaterial@{addMaterial}}
+\index{addMaterial@{addMaterial}!com.example.demo.MaterialController@{com.example.demo.MaterialController}}
+\doxysubsubsection{addMaterial()}
+{\footnotesize\ttfamily String com.\+example.\+demo.\+Material\+Controller.\+add\+Material (\begin{DoxyParamCaption}\item[{@Model\+Attribute \textbf{ Material}}]{material }\end{DoxyParamCaption})}
+
+
+
+Метод, используемый при обработке запроса на добавление 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Принимает} & на вход объект модели а также параметры Post запроса \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Возвращает указатель перенаправления на гравную страницу 
+\end{DoxyReturn}
+
+
+Definition at line \textbf{ 62} of file \textbf{ Material\+Controller.\+java}.
+
+\label{classcom_1_1example_1_1demo_1_1_material_controller_ae2639165f86531f0c71a1af0963521d2} 
+\index{com.example.demo.MaterialController@{com.example.demo.MaterialController}!adjustMaterials@{adjustMaterials}}
+\index{adjustMaterials@{adjustMaterials}!com.example.demo.MaterialController@{com.example.demo.MaterialController}}
+\doxysubsubsection{adjustMaterials()}
+{\footnotesize\ttfamily String com.\+example.\+demo.\+Material\+Controller.\+adjust\+Materials (\begin{DoxyParamCaption}\item[{Model}]{model,  }\item[{@Request\+Param Long}]{material\+Id,  }\item[{@Request\+Param int}]{quantity\+Change }\end{DoxyParamCaption})}
+
+
+
+Метод, используемый при обработке запросов на настройку 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Принимает} & на вход объект модели а также параметры Post запроса \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Возвращает указатель перенаправления на гравную страницу 
+\end{DoxyReturn}
+
+
+Definition at line \textbf{ 37} of file \textbf{ Material\+Controller.\+java}.
+
+\label{classcom_1_1example_1_1demo_1_1_material_controller_a51e69ea1616ecc410837dc7f9951c1ce} 
+\index{com.example.demo.MaterialController@{com.example.demo.MaterialController}!listMaterials@{listMaterials}}
+\index{listMaterials@{listMaterials}!com.example.demo.MaterialController@{com.example.demo.MaterialController}}
+\doxysubsubsection{listMaterials()}
+{\footnotesize\ttfamily String com.\+example.\+demo.\+Material\+Controller.\+list\+Materials (\begin{DoxyParamCaption}\item[{Model}]{model }\end{DoxyParamCaption})}
+
+
+
+Метод, используемый при обработке запросов 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Принимает} & на вход объект модели \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Возвращает название MVC шаблона 
+\end{DoxyReturn}
+
+
+Definition at line \textbf{ 26} of file \textbf{ Material\+Controller.\+java}.
+
+\label{classcom_1_1example_1_1demo_1_1_material_controller_af3d59639d102bcbbb47e0c176a042bd1} 
+\index{com.example.demo.MaterialController@{com.example.demo.MaterialController}!showAddMaterialForm@{showAddMaterialForm}}
+\index{showAddMaterialForm@{showAddMaterialForm}!com.example.demo.MaterialController@{com.example.demo.MaterialController}}
+\doxysubsubsection{showAddMaterialForm()}
+{\footnotesize\ttfamily String com.\+example.\+demo.\+Material\+Controller.\+show\+Add\+Material\+Form (\begin{DoxyParamCaption}\item[{Model}]{model }\end{DoxyParamCaption})}
+
+
+
+Метод, используемый при обработке запросов на добавление 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Принимает} & на вход объект модели а также параметры Post запроса \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Возвращает название MVC шаблона 
+\end{DoxyReturn}
+
+
+Definition at line \textbf{ 52} of file \textbf{ Material\+Controller.\+java}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/com/example/demo/\textbf{ Material\+Controller.\+java}\end{DoxyCompactItemize}

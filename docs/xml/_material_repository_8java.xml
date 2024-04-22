@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="_material_repository_8java" kind="file" language="Java">
+    <compoundname>MaterialRepository.java</compoundname>
+    <innerclass refid="interfacecom_1_1example_1_1demo_1_1_material_repository" prot="public">com::example::demo::MaterialRepository</innerclass>
+    <innernamespace refid="namespacecom_1_1example_1_1demo">com::example::demo</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">package<sp/></highlight><highlight class="normal">com.example.demo;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>org.springframework.data.jpa.repository.JpaRepository;</highlight></codeline>
+<codeline lineno="7" refid="interfacecom_1_1example_1_1demo_1_1_material_repository" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interfacecom_1_1example_1_1demo_1_1_material_repository" kindref="compound">MaterialRepository</ref><sp/></highlight><highlight class="keyword">extends</highlight><highlight class="normal"><sp/>JpaRepository&lt;Material,<sp/>Long&gt;<sp/>{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="src/main/java/com/example/demo/MaterialRepository.java"/>
+  </compounddef>
+</doxygen>

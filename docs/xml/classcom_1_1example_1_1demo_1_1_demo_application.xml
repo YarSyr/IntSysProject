@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1example_1_1demo_1_1_demo_application" kind="class" language="Java" prot="public">
+    <compoundname>com::example::demo::DemoApplication</compoundname>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classcom_1_1example_1_1demo_1_1_demo_application_1a8a565fb84a5ce2745221d564733e61fd" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void com.example.demo.DemoApplication.main</definition>
+        <argsstring>(String[] args)</argsstring>
+        <name>main</name>
+        <qualifiedname>com.example.demo.DemoApplication.main</qualifiedname>
+        <param>
+          <type>String[]</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+<para>Главный метод вызываемый при запуске приложения </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Принимает</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>на вход строковые параметры аргументов запуска </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Ничо не возвращает </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/example/demo/DemoApplication.java" line="15" column="20" bodyfile="src/main/java/com/example/demo/DemoApplication.java" bodystart="15" bodyend="17"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>main класс, используемый при запуске приложения </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/main/java/com/example/demo/DemoApplication.java" line="9" column="7" bodyfile="src/main/java/com/example/demo/DemoApplication.java" bodystart="9" bodyend="19"/>
+    <listofallmembers>
+      <member refid="classcom_1_1example_1_1demo_1_1_demo_application_1a8a565fb84a5ce2745221d564733e61fd" prot="public" virt="non-virtual"><scope>com::example::demo::DemoApplication</scope><name>main</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

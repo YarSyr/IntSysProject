@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_9bc3029ce790ba7fc3deebedf9c70940" xml:lang="en-US">
+<title>src/main/java/com/example/demo Directory Reference</title>
+<indexterm><primary>src/main/java/com/example/demo Directory Reference</primary></indexterm>
+<simplesect>
+    <title>Files    </title>
+        <itemizedlist>
+            <listitem><para>file <link linkend="__demo_application_8java">DemoApplication.java</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__material_8java">Material.java</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__material_controller_8java">MaterialController.java</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__material_repository_8java">MaterialRepository.java</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

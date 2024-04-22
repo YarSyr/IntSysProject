@@ -1,0 +1,190 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1example_1_1demo_1_1_material" kind="class" language="Java" prot="public">
+    <compoundname>com::example::demo::Material</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classcom_1_1example_1_1demo_1_1_material_1a7935ef4cd2e79364d1d1728eff2c7a15" prot="public" static="no" mutable="no">
+        <type>Integer</type>
+        <definition>Integer com.example.demo.Material.id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <qualifiedname>com.example.demo.Material.id</qualifiedname>
+        <briefdescription>
+<para>Идентификатор для первиного ключа </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/example/demo/Material.java" line="20" column="20" bodyfile="src/main/java/com/example/demo/Material.java" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1example_1_1demo_1_1_material_1ad0722b08ee17cb9d482ede7137ea0798" prot="public" static="no" mutable="no">
+        <type>String</type>
+        <definition>String com.example.demo.Material.name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <qualifiedname>com.example.demo.Material.name</qualifiedname>
+        <briefdescription>
+<para>название материала </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/example/demo/Material.java" line="22" column="19" bodyfile="src/main/java/com/example/demo/Material.java" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1example_1_1demo_1_1_material_1a08615d7f770929a9e10310d17440f4d3" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int com.example.demo.Material.quantity</definition>
+        <argsstring></argsstring>
+        <name>quantity</name>
+        <qualifiedname>com.example.demo.Material.quantity</qualifiedname>
+        <briefdescription>
+<para>количество материала </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/example/demo/Material.java" line="24" column="16" bodyfile="src/main/java/com/example/demo/Material.java" bodystart="24" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1example_1_1demo_1_1_material_1a48b1cd0b31f926effc370577170cd853" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.example.demo.Material.setId</definition>
+        <argsstring>(Integer id)</argsstring>
+        <name>setId</name>
+        <qualifiedname>com.example.demo.Material.setId</qualifiedname>
+        <param>
+          <type>Integer</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+<para>сеттер для идентификатора </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/example/demo/Material.java" line="26" column="17" bodyfile="src/main/java/com/example/demo/Material.java" bodystart="26" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1example_1_1demo_1_1_material_1a57dd611e25828c6249de98a3c3c28dfa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.example.demo.Material.setName</definition>
+        <argsstring>(String name)</argsstring>
+        <name>setName</name>
+        <qualifiedname>com.example.demo.Material.setName</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>сеттер для имени </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/example/demo/Material.java" line="30" column="17" bodyfile="src/main/java/com/example/demo/Material.java" bodystart="30" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1example_1_1demo_1_1_material_1ae2f22e37e1288827d741af447ef50c81" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Integer</type>
+        <definition>Integer com.example.demo.Material.getId</definition>
+        <argsstring>()</argsstring>
+        <name>getId</name>
+        <qualifiedname>com.example.demo.Material.getId</qualifiedname>
+        <briefdescription>
+<para>геттер для идентификатора </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/example/demo/Material.java" line="34" column="20" bodyfile="src/main/java/com/example/demo/Material.java" bodystart="34" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1example_1_1demo_1_1_material_1aa94af242df83f12455b7ab8414b76737" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.example.demo.Material.getName</definition>
+        <argsstring>()</argsstring>
+        <name>getName</name>
+        <qualifiedname>com.example.demo.Material.getName</qualifiedname>
+        <briefdescription>
+<para>геттер для идентификатора </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/example/demo/Material.java" line="38" column="19" bodyfile="src/main/java/com/example/demo/Material.java" bodystart="38" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1example_1_1demo_1_1_material_1afb67179c1ab032e49ab4cd60165ab077" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.example.demo.Material.setQuantity</definition>
+        <argsstring>(int i)</argsstring>
+        <name>setQuantity</name>
+        <qualifiedname>com.example.demo.Material.setQuantity</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+<para>сеттер для количества </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/example/demo/Material.java" line="42" column="17" bodyfile="src/main/java/com/example/demo/Material.java" bodystart="42" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1example_1_1demo_1_1_material_1a784eb4fcc605628f5a233b7dfd6fa757" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Integer</type>
+        <definition>Integer com.example.demo.Material.getQuantity</definition>
+        <argsstring>()</argsstring>
+        <name>getQuantity</name>
+        <qualifiedname>com.example.demo.Material.getQuantity</qualifiedname>
+        <briefdescription>
+<para>геттер для количества </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/example/demo/Material.java" line="46" column="20" bodyfile="src/main/java/com/example/demo/Material.java" bodystart="46" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1example_1_1demo_1_1_material_1afeb1cd6f93b77ed42816deb2072c30b6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.example.demo.Material.toString</definition>
+        <argsstring>()</argsstring>
+        <name>toString</name>
+        <qualifiedname>com.example.demo.Material.toString</qualifiedname>
+        <briefdescription>
+<para>перегруженный метод вывода в консоль </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/example/demo/Material.java" line="51" column="19" bodyfile="src/main/java/com/example/demo/Material.java" bodystart="51" bodyend="53"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Класс объекта материала, используемый при работе с базой данных </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/main/java/com/example/demo/Material.java" line="15" column="7" bodyfile="src/main/java/com/example/demo/Material.java" bodystart="15" bodyend="54"/>
+    <listofallmembers>
+      <member refid="classcom_1_1example_1_1demo_1_1_material_1ae2f22e37e1288827d741af447ef50c81" prot="public" virt="non-virtual"><scope>com::example::demo::Material</scope><name>getId</name></member>
+      <member refid="classcom_1_1example_1_1demo_1_1_material_1aa94af242df83f12455b7ab8414b76737" prot="public" virt="non-virtual"><scope>com::example::demo::Material</scope><name>getName</name></member>
+      <member refid="classcom_1_1example_1_1demo_1_1_material_1a784eb4fcc605628f5a233b7dfd6fa757" prot="public" virt="non-virtual"><scope>com::example::demo::Material</scope><name>getQuantity</name></member>
+      <member refid="classcom_1_1example_1_1demo_1_1_material_1a7935ef4cd2e79364d1d1728eff2c7a15" prot="public" virt="non-virtual"><scope>com::example::demo::Material</scope><name>id</name></member>
+      <member refid="classcom_1_1example_1_1demo_1_1_material_1ad0722b08ee17cb9d482ede7137ea0798" prot="public" virt="non-virtual"><scope>com::example::demo::Material</scope><name>name</name></member>
+      <member refid="classcom_1_1example_1_1demo_1_1_material_1a08615d7f770929a9e10310d17440f4d3" prot="public" virt="non-virtual"><scope>com::example::demo::Material</scope><name>quantity</name></member>
+      <member refid="classcom_1_1example_1_1demo_1_1_material_1a48b1cd0b31f926effc370577170cd853" prot="public" virt="non-virtual"><scope>com::example::demo::Material</scope><name>setId</name></member>
+      <member refid="classcom_1_1example_1_1demo_1_1_material_1a57dd611e25828c6249de98a3c3c28dfa" prot="public" virt="non-virtual"><scope>com::example::demo::Material</scope><name>setName</name></member>
+      <member refid="classcom_1_1example_1_1demo_1_1_material_1afb67179c1ab032e49ab4cd60165ab077" prot="public" virt="non-virtual"><scope>com::example::demo::Material</scope><name>setQuantity</name></member>
+      <member refid="classcom_1_1example_1_1demo_1_1_material_1afeb1cd6f93b77ed42816deb2072c30b6" prot="public" virt="non-virtual"><scope>com::example::demo::Material</scope><name>toString</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

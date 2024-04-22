@@ -1,0 +1,185 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classcom_1_1example_1_1demo_1_1_material" xml:lang="en-US">
+<title>com.example.demo.Material Class Reference</title>
+<indexterm><primary>com.example.demo.Material</primary></indexterm>
+<para>
+
+<para>Класс объекта материала, используемый при работе с базой данных </para>
+ 
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_classcom_1_1example_1_1demo_1_1_material_1a48b1cd0b31f926effc370577170cd853">setId</link> (Integer <link linkend="_classcom_1_1example_1_1demo_1_1_material_1a7935ef4cd2e79364d1d1728eff2c7a15">id</link>)</para>
+
+<para>сеттер для идентификатора </para>
+</listitem>
+            <listitem><para>void <link linkend="_classcom_1_1example_1_1demo_1_1_material_1a57dd611e25828c6249de98a3c3c28dfa">setName</link> (String <link linkend="_classcom_1_1example_1_1demo_1_1_material_1ad0722b08ee17cb9d482ede7137ea0798">name</link>)</para>
+
+<para>сеттер для имени </para>
+</listitem>
+            <listitem><para>Integer <link linkend="_classcom_1_1example_1_1demo_1_1_material_1ae2f22e37e1288827d741af447ef50c81">getId</link> ()</para>
+
+<para>геттер для идентификатора </para>
+</listitem>
+            <listitem><para>String <link linkend="_classcom_1_1example_1_1demo_1_1_material_1aa94af242df83f12455b7ab8414b76737">getName</link> ()</para>
+
+<para>геттер для идентификатора </para>
+</listitem>
+            <listitem><para>void <link linkend="_classcom_1_1example_1_1demo_1_1_material_1afb67179c1ab032e49ab4cd60165ab077">setQuantity</link> (int i)</para>
+
+<para>сеттер для количества </para>
+</listitem>
+            <listitem><para>Integer <link linkend="_classcom_1_1example_1_1demo_1_1_material_1a784eb4fcc605628f5a233b7dfd6fa757">getQuantity</link> ()</para>
+
+<para>геттер для количества </para>
+</listitem>
+            <listitem><para>String <link linkend="_classcom_1_1example_1_1demo_1_1_material_1afeb1cd6f93b77ed42816deb2072c30b6">toString</link> ()</para>
+
+<para>перегруженный метод вывода в консоль </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>Integer <link linkend="_classcom_1_1example_1_1demo_1_1_material_1a7935ef4cd2e79364d1d1728eff2c7a15">id</link></para>
+
+<para>Идентификатор для первиного ключа </para>
+</listitem>
+            <listitem><para>String <link linkend="_classcom_1_1example_1_1demo_1_1_material_1ad0722b08ee17cb9d482ede7137ea0798">name</link></para>
+
+<para>название материала </para>
+</listitem>
+            <listitem><para>int <link linkend="_classcom_1_1example_1_1demo_1_1_material_1a08615d7f770929a9e10310d17440f4d3">quantity</link></para>
+
+<para>количество материала </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Класс объекта материала, используемый при работе с базой данных </para>
+<para>
+Definition at line <link linkend="__material_8java_source_1l00015">15</link> of file <link linkend="__material_8java_source">Material.java</link>.</para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classcom_1_1example_1_1demo_1_1_material_1ae2f22e37e1288827d741af447ef50c81"/><section>
+    <title>getId()</title>
+<indexterm><primary>getId</primary><secondary>com.example.demo.Material</secondary></indexterm>
+<indexterm><primary>com.example.demo.Material</primary><secondary>getId</secondary></indexterm>
+<para><computeroutput>Integer com.example.demo.Material.getId ( )</computeroutput></para><para>
+
+<para>геттер для идентификатора </para>
+</para>
+<para>
+Definition at line <link linkend="__material_8java_source_1l00034">34</link> of file <link linkend="__material_8java_source">Material.java</link>.</para>
+</section>
+<anchor xml:id="_classcom_1_1example_1_1demo_1_1_material_1aa94af242df83f12455b7ab8414b76737"/><section>
+    <title>getName()</title>
+<indexterm><primary>getName</primary><secondary>com.example.demo.Material</secondary></indexterm>
+<indexterm><primary>com.example.demo.Material</primary><secondary>getName</secondary></indexterm>
+<para><computeroutput>String com.example.demo.Material.getName ( )</computeroutput></para><para>
+
+<para>геттер для идентификатора </para>
+</para>
+<para>
+Definition at line <link linkend="__material_8java_source_1l00038">38</link> of file <link linkend="__material_8java_source">Material.java</link>.</para>
+</section>
+<anchor xml:id="_classcom_1_1example_1_1demo_1_1_material_1a784eb4fcc605628f5a233b7dfd6fa757"/><section>
+    <title>getQuantity()</title>
+<indexterm><primary>getQuantity</primary><secondary>com.example.demo.Material</secondary></indexterm>
+<indexterm><primary>com.example.demo.Material</primary><secondary>getQuantity</secondary></indexterm>
+<para><computeroutput>Integer com.example.demo.Material.getQuantity ( )</computeroutput></para><para>
+
+<para>геттер для количества </para>
+</para>
+<para>
+Definition at line <link linkend="__material_8java_source_1l00046">46</link> of file <link linkend="__material_8java_source">Material.java</link>.</para>
+</section>
+<anchor xml:id="_classcom_1_1example_1_1demo_1_1_material_1a48b1cd0b31f926effc370577170cd853"/><section>
+    <title>setId()</title>
+<indexterm><primary>setId</primary><secondary>com.example.demo.Material</secondary></indexterm>
+<indexterm><primary>com.example.demo.Material</primary><secondary>setId</secondary></indexterm>
+<para><computeroutput>void com.example.demo.Material.setId (Integer id)</computeroutput></para><para>
+
+<para>сеттер для идентификатора </para>
+</para>
+<para>
+Definition at line <link linkend="__material_8java_source_1l00026">26</link> of file <link linkend="__material_8java_source">Material.java</link>.</para>
+</section>
+<anchor xml:id="_classcom_1_1example_1_1demo_1_1_material_1a57dd611e25828c6249de98a3c3c28dfa"/><section>
+    <title>setName()</title>
+<indexterm><primary>setName</primary><secondary>com.example.demo.Material</secondary></indexterm>
+<indexterm><primary>com.example.demo.Material</primary><secondary>setName</secondary></indexterm>
+<para><computeroutput>void com.example.demo.Material.setName (String name)</computeroutput></para><para>
+
+<para>сеттер для имени </para>
+</para>
+<para>
+Definition at line <link linkend="__material_8java_source_1l00030">30</link> of file <link linkend="__material_8java_source">Material.java</link>.</para>
+</section>
+<anchor xml:id="_classcom_1_1example_1_1demo_1_1_material_1afb67179c1ab032e49ab4cd60165ab077"/><section>
+    <title>setQuantity()</title>
+<indexterm><primary>setQuantity</primary><secondary>com.example.demo.Material</secondary></indexterm>
+<indexterm><primary>com.example.demo.Material</primary><secondary>setQuantity</secondary></indexterm>
+<para><computeroutput>void com.example.demo.Material.setQuantity (int i)</computeroutput></para><para>
+
+<para>сеттер для количества </para>
+</para>
+<para>
+Definition at line <link linkend="__material_8java_source_1l00042">42</link> of file <link linkend="__material_8java_source">Material.java</link>.</para>
+</section>
+<anchor xml:id="_classcom_1_1example_1_1demo_1_1_material_1afeb1cd6f93b77ed42816deb2072c30b6"/><section>
+    <title>toString()</title>
+<indexterm><primary>toString</primary><secondary>com.example.demo.Material</secondary></indexterm>
+<indexterm><primary>com.example.demo.Material</primary><secondary>toString</secondary></indexterm>
+<para><computeroutput>String com.example.demo.Material.toString ( )</computeroutput></para><para>
+
+<para>перегруженный метод вывода в консоль </para>
+</para>
+<para>
+Definition at line <link linkend="__material_8java_source_1l00051">51</link> of file <link linkend="__material_8java_source">Material.java</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classcom_1_1example_1_1demo_1_1_material_1a7935ef4cd2e79364d1d1728eff2c7a15"/><section>
+    <title>id</title>
+<indexterm><primary>id</primary><secondary>com.example.demo.Material</secondary></indexterm>
+<indexterm><primary>com.example.demo.Material</primary><secondary>id</secondary></indexterm>
+<para><computeroutput>Integer com.example.demo.Material.id</computeroutput></para><para>
+
+<para>Идентификатор для первиного ключа </para>
+</para>
+<para>
+Definition at line <link linkend="__material_8java_source_1l00020">20</link> of file <link linkend="__material_8java_source">Material.java</link>.</para>
+</section>
+<anchor xml:id="_classcom_1_1example_1_1demo_1_1_material_1ad0722b08ee17cb9d482ede7137ea0798"/><section>
+    <title>name</title>
+<indexterm><primary>name</primary><secondary>com.example.demo.Material</secondary></indexterm>
+<indexterm><primary>com.example.demo.Material</primary><secondary>name</secondary></indexterm>
+<para><computeroutput>String com.example.demo.Material.name</computeroutput></para><para>
+
+<para>название материала </para>
+</para>
+<para>
+Definition at line <link linkend="__material_8java_source_1l00022">22</link> of file <link linkend="__material_8java_source">Material.java</link>.</para>
+</section>
+<anchor xml:id="_classcom_1_1example_1_1demo_1_1_material_1a08615d7f770929a9e10310d17440f4d3"/><section>
+    <title>quantity</title>
+<indexterm><primary>quantity</primary><secondary>com.example.demo.Material</secondary></indexterm>
+<indexterm><primary>com.example.demo.Material</primary><secondary>quantity</secondary></indexterm>
+<para><computeroutput>int com.example.demo.Material.quantity</computeroutput></para><para>
+
+<para>количество материала </para>
+</para>
+<para>
+Definition at line <link linkend="__material_8java_source_1l00024">24</link> of file <link linkend="__material_8java_source">Material.java</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+src/main/java/com/example/demo/<link linkend="__material_8java">Material.java</link></section>
+</section>

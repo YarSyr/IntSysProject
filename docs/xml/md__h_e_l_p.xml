@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="md__h_e_l_p" kind="page">
+    <compoundname>md__h_e_l_p</compoundname>
+    <title>Getting Started</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><anchor id="md__h_e_l_p_1autotoc_md0"/> </para>
+<sect2 id="md__h_e_l_p_1autotoc_md1">
+<title>Reference Documentation</title><para>For further reference, please consider the following sections:</para>
+<para><itemizedlist>
+<listitem><para><ulink url="https://maven.apache.org/guides/index.html">Official Apache Maven documentation</ulink></para>
+</listitem><listitem><para><ulink url="https://docs.spring.io/spring-boot/docs/3.2.5/maven-plugin/reference/html/">Spring Boot Maven Plugin Reference Guide</ulink></para>
+</listitem><listitem><para><ulink url="https://docs.spring.io/spring-boot/docs/3.2.5/maven-plugin/reference/html/#build-image">Create an OCI image</ulink></para>
+</listitem><listitem><para><ulink url="https://docs.spring.io/spring-boot/docs/3.2.5/reference/htmlsingle/index.html#web">Spring Web</ulink></para>
+</listitem><listitem><para><ulink url="https://docs.spring.io/spring-boot/docs/3.2.5/reference/htmlsingle/index.html#data.sql.jpa-and-spring-data">Spring Data JPA</ulink></para>
+</listitem></itemizedlist>
+</para>
+</sect2>
+<sect2 id="md__h_e_l_p_1autotoc_md2">
+<title>Guides</title><para>The following guides illustrate how to use some features concretely:</para>
+<para><itemizedlist>
+<listitem><para><ulink url="https://spring.io/guides/gs/rest-service/">Building a RESTful Web Service</ulink></para>
+</listitem><listitem><para><ulink url="https://spring.io/guides/gs/serving-web-content/">Serving Web Content with Spring MVC</ulink></para>
+</listitem><listitem><para><ulink url="https://spring.io/guides/tutorials/rest/">Building REST services with Spring</ulink></para>
+</listitem><listitem><para><ulink url="https://spring.io/guides/gs/accessing-data-jpa/">Accessing Data with JPA</ulink> </para>
+</listitem></itemizedlist>
+</para>
+</sect2>
+    </detaileddescription>
+    <location file="HELP.md"/>
+  </compounddef>
+</doxygen>

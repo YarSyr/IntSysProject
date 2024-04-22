@@ -1,0 +1,52 @@
+\doxysection{Material\+Controller.\+java}
+\label{_material_controller_8java_source}\index{src/main/java/com/example/demo/MaterialController.java@{src/main/java/com/example/demo/MaterialController.java}}
+\textbf{ Go to the documentation of this file.}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{keyword}{package\ }com.example.demo;}
+\DoxyCodeLine{00002\ \textcolor{keyword}{import}\ org.springframework.beans.factory.annotation.Autowired;}
+\DoxyCodeLine{00003\ \textcolor{keyword}{import}\ org.springframework.stereotype.Controller;}
+\DoxyCodeLine{00004\ \textcolor{keyword}{import}\ org.springframework.ui.Model;}
+\DoxyCodeLine{00005\ \textcolor{keyword}{import}\ org.springframework.web.bind.annotation.GetMapping;}
+\DoxyCodeLine{00006\ \textcolor{keyword}{import}\ org.springframework.web.bind.annotation.ModelAttribute;}
+\DoxyCodeLine{00007\ \textcolor{keyword}{import}\ org.springframework.web.bind.annotation.PostMapping;}
+\DoxyCodeLine{00008\ \textcolor{keyword}{import}\ org.springframework.web.bind.annotation.RequestParam;}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{import}\ java.util.List;}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00016\ @Controller}
+\DoxyCodeLine{00017\ \textcolor{keyword}{public}\ \textcolor{keyword}{class\ }MaterialController\ \{}
+\DoxyCodeLine{00018\ \ \ \ \ @Autowired}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keyword}{private}\ MaterialRepository\ materialRepository;}
+\DoxyCodeLine{00025\ \ \ \ \ @GetMapping(\textcolor{stringliteral}{"{}/"{}})}
+\DoxyCodeLine{00026\ \ \ \ \ public\ String\ listMaterials(Model\ model)\ \{}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ List<Material>\ materials\ =\ materialRepository.findAll();}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ model.addAttribute(\textcolor{stringliteral}{"{}materials"{}},\ materials);}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{stringliteral}{"{}materials"{}};}
+\DoxyCodeLine{00030\ \ \ \ \ \}}
+\DoxyCodeLine{00036\ \ \ \ \ @PostMapping(\textcolor{stringliteral}{"{}/adjust"{}})}
+\DoxyCodeLine{00037\ \ \ \ \ public\ String\ adjustMaterials(Model\ model,\ @RequestParam\ Long\ materialId,\ @RequestParam\ \textcolor{keywordtype}{int}\ quantityChange)\ \{}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ Material\ material\ =\ materialRepository.findById(materialId).orElseThrow(()\ -\/>\ \textcolor{keyword}{new}\ IllegalArgumentException(\textcolor{stringliteral}{"{}Invalid\ material\ ID"{}}));}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ material.setQuantity(material.getQuantity()\ +\ quantityChange);}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ System.out.println(material.getQuantity()\ +\ quantityChange);}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ System.out.println(material);}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ materialRepository.save(material);}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{stringliteral}{"{}redirect:/"{}};}
+\DoxyCodeLine{00044\ \ \ \ \ \}}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00051\ \ \ \ \ @GetMapping(\textcolor{stringliteral}{"{}/add"{}})}
+\DoxyCodeLine{00052\ \ \ \ \ public\ String\ showAddMaterialForm(Model\ model)\ \{}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ model.addAttribute(\textcolor{stringliteral}{"{}material"{}},\ \textcolor{keyword}{new}\ Material());}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{stringliteral}{"{}add\_material"{}};}
+\DoxyCodeLine{00055\ \ \ \ \ \}}
+\DoxyCodeLine{00061\ \ \ \ \ @PostMapping(\textcolor{stringliteral}{"{}/add"{}})}
+\DoxyCodeLine{00062\ \ \ \ \ public\ String\ addMaterial(@ModelAttribute\ Material\ material)\ \{}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ materialRepository.save(material);}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{stringliteral}{"{}redirect:/"{}};}
+\DoxyCodeLine{00065\ \ \ \ \ \}}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00069\ \}}
+\DoxyCodeLine{00070\ }
+
+\end{DoxyCode}

@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__material_repository_8java_source" xml:lang="en-US">
+<title>MaterialRepository.java</title>
+<indexterm><primary>src/main/java/com/example/demo/MaterialRepository.java</primary></indexterm>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered"><anchor xml:id="__material_repository_8java_source_1l00001"/>00001 <emphasis role="keyword">package&#32;</emphasis>com.example.demo;
+<anchor xml:id="__material_repository_8java_source_1l00002"/>00002 
+<anchor xml:id="__material_repository_8java_source_1l00003"/>00003 <emphasis role="keyword">import</emphasis>&#32;org.springframework.data.jpa.repository.JpaRepository;
+<anchor xml:id="__material_repository_8java_source_1l00007"/><link linkend="_interfacecom_1_1example_1_1demo_1_1_material_repository">00007</link> <emphasis role="keyword">public</emphasis>&#32;<emphasis role="keyword">interface&#32;</emphasis><link linkend="_interfacecom_1_1example_1_1demo_1_1_material_repository">MaterialRepository</link>&#32;<emphasis role="keyword">extends</emphasis>&#32;JpaRepository&lt;Material,&#32;Long&gt;&#32;{
+<anchor xml:id="__material_repository_8java_source_1l00008"/>00008 }
+<anchor xml:id="__material_repository_8java_source_1l00009"/>00009 
+</programlisting></section>

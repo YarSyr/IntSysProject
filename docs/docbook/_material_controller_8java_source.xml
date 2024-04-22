@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__material_controller_8java_source" xml:lang="en-US">
+<title>MaterialController.java</title>
+<indexterm><primary>src/main/java/com/example/demo/MaterialController.java</primary></indexterm>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered"><anchor xml:id="__material_controller_8java_source_1l00001"/>00001 <emphasis role="keyword">package&#32;</emphasis>com.example.demo;
+<anchor xml:id="__material_controller_8java_source_1l00002"/>00002 <emphasis role="keyword">import</emphasis>&#32;org.springframework.beans.factory.annotation.Autowired;
+<anchor xml:id="__material_controller_8java_source_1l00003"/>00003 <emphasis role="keyword">import</emphasis>&#32;org.springframework.stereotype.Controller;
+<anchor xml:id="__material_controller_8java_source_1l00004"/>00004 <emphasis role="keyword">import</emphasis>&#32;org.springframework.ui.Model;
+<anchor xml:id="__material_controller_8java_source_1l00005"/>00005 <emphasis role="keyword">import</emphasis>&#32;org.springframework.web.bind.annotation.GetMapping;
+<anchor xml:id="__material_controller_8java_source_1l00006"/>00006 <emphasis role="keyword">import</emphasis>&#32;org.springframework.web.bind.annotation.ModelAttribute;
+<anchor xml:id="__material_controller_8java_source_1l00007"/>00007 <emphasis role="keyword">import</emphasis>&#32;org.springframework.web.bind.annotation.PostMapping;
+<anchor xml:id="__material_controller_8java_source_1l00008"/>00008 <emphasis role="keyword">import</emphasis>&#32;org.springframework.web.bind.annotation.RequestParam;
+<anchor xml:id="__material_controller_8java_source_1l00009"/>00009 
+<anchor xml:id="__material_controller_8java_source_1l00010"/>00010 <emphasis role="keyword">import</emphasis>&#32;java.util.List;
+<anchor xml:id="__material_controller_8java_source_1l00011"/>00011 
+<anchor xml:id="__material_controller_8java_source_1l00016"/>00016 @Controller
+<anchor xml:id="__material_controller_8java_source_1l00017"/><link linkend="_classcom_1_1example_1_1demo_1_1_material_controller">00017</link> <emphasis role="keyword">public</emphasis>&#32;<emphasis role="keyword">class&#32;</emphasis><link linkend="_classcom_1_1example_1_1demo_1_1_material_controller">MaterialController</link>&#32;{
+<anchor xml:id="__material_controller_8java_source_1l00018"/>00018 &#32;&#32;&#32;&#32;@Autowired
+<anchor xml:id="__material_controller_8java_source_1l00019"/>00019 &#32;&#32;&#32;&#32;<emphasis role="keyword">private</emphasis>&#32;<link linkend="_interfacecom_1_1example_1_1demo_1_1_material_repository">MaterialRepository</link>&#32;materialRepository;
+<anchor xml:id="__material_controller_8java_source_1l00025"/>00025 &#32;&#32;&#32;&#32;@GetMapping(<emphasis role="stringliteral">&quot;/&quot;</emphasis>)
+<anchor xml:id="__material_controller_8java_source_1l00026"/><link linkend="_classcom_1_1example_1_1demo_1_1_material_controller_1a51e69ea1616ecc410837dc7f9951c1ce">00026</link> &#32;&#32;&#32;&#32;public&#32;String&#32;<link linkend="_classcom_1_1example_1_1demo_1_1_material_controller_1a51e69ea1616ecc410837dc7f9951c1ce">listMaterials</link>(Model&#32;model)&#32;{
+<anchor xml:id="__material_controller_8java_source_1l00027"/>00027 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;List&lt;Material&gt;&#32;materials&#32;=&#32;materialRepository.findAll();
+<anchor xml:id="__material_controller_8java_source_1l00028"/>00028 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;model.addAttribute(<emphasis role="stringliteral">&quot;materials&quot;</emphasis>,&#32;materials);
+<anchor xml:id="__material_controller_8java_source_1l00029"/>00029 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;<emphasis role="stringliteral">&quot;materials&quot;</emphasis>;
+<anchor xml:id="__material_controller_8java_source_1l00030"/>00030 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__material_controller_8java_source_1l00036"/>00036 &#32;&#32;&#32;&#32;@PostMapping(<emphasis role="stringliteral">&quot;/adjust&quot;</emphasis>)
+<anchor xml:id="__material_controller_8java_source_1l00037"/><link linkend="_classcom_1_1example_1_1demo_1_1_material_controller_1ae2639165f86531f0c71a1af0963521d2">00037</link> &#32;&#32;&#32;&#32;public&#32;String&#32;<link linkend="_classcom_1_1example_1_1demo_1_1_material_controller_1ae2639165f86531f0c71a1af0963521d2">adjustMaterials</link>(Model&#32;model,&#32;@RequestParam&#32;Long&#32;materialId,&#32;@RequestParam&#32;<emphasis role="keywordtype">int</emphasis>&#32;quantityChange)&#32;{
+<anchor xml:id="__material_controller_8java_source_1l00038"/>00038 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_classcom_1_1example_1_1demo_1_1_material">Material</link>&#32;material&#32;=&#32;materialRepository.findById(materialId).orElseThrow(()&#32;-&gt;&#32;<emphasis role="keyword">new</emphasis>&#32;IllegalArgumentException(<emphasis role="stringliteral">&quot;Invalid&#32;material&#32;ID&quot;</emphasis>));
+<anchor xml:id="__material_controller_8java_source_1l00039"/>00039 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;material.<link linkend="_classcom_1_1example_1_1demo_1_1_material_1afb67179c1ab032e49ab4cd60165ab077">setQuantity</link>(material.<link linkend="_classcom_1_1example_1_1demo_1_1_material_1a784eb4fcc605628f5a233b7dfd6fa757">getQuantity</link>()&#32;+&#32;quantityChange);
+<anchor xml:id="__material_controller_8java_source_1l00040"/>00040 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;System.out.println(material.<link linkend="_classcom_1_1example_1_1demo_1_1_material_1a784eb4fcc605628f5a233b7dfd6fa757">getQuantity</link>()&#32;+&#32;quantityChange);
+<anchor xml:id="__material_controller_8java_source_1l00041"/>00041 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;System.out.println(material);
+<anchor xml:id="__material_controller_8java_source_1l00042"/>00042 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;materialRepository.save(material);
+<anchor xml:id="__material_controller_8java_source_1l00043"/>00043 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;<emphasis role="stringliteral">&quot;redirect:/&quot;</emphasis>;
+<anchor xml:id="__material_controller_8java_source_1l00044"/>00044 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__material_controller_8java_source_1l00045"/>00045 
+<anchor xml:id="__material_controller_8java_source_1l00051"/>00051 &#32;&#32;&#32;&#32;@GetMapping(<emphasis role="stringliteral">&quot;/add&quot;</emphasis>)
+<anchor xml:id="__material_controller_8java_source_1l00052"/><link linkend="_classcom_1_1example_1_1demo_1_1_material_controller_1af3d59639d102bcbbb47e0c176a042bd1">00052</link> &#32;&#32;&#32;&#32;public&#32;String&#32;<link linkend="_classcom_1_1example_1_1demo_1_1_material_controller_1af3d59639d102bcbbb47e0c176a042bd1">showAddMaterialForm</link>(Model&#32;model)&#32;{
+<anchor xml:id="__material_controller_8java_source_1l00053"/>00053 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;model.addAttribute(<emphasis role="stringliteral">&quot;material&quot;</emphasis>,&#32;<emphasis role="keyword">new</emphasis>&#32;<link linkend="_classcom_1_1example_1_1demo_1_1_material">Material</link>());
+<anchor xml:id="__material_controller_8java_source_1l00054"/>00054 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;<emphasis role="stringliteral">&quot;add_material&quot;</emphasis>;
+<anchor xml:id="__material_controller_8java_source_1l00055"/>00055 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__material_controller_8java_source_1l00061"/>00061 &#32;&#32;&#32;&#32;@PostMapping(<emphasis role="stringliteral">&quot;/add&quot;</emphasis>)
+<anchor xml:id="__material_controller_8java_source_1l00062"/><link linkend="_classcom_1_1example_1_1demo_1_1_material_controller_1a0538514bc1dd11a61e279e5f5d4d0948">00062</link> &#32;&#32;&#32;&#32;public&#32;String&#32;<link linkend="_classcom_1_1example_1_1demo_1_1_material_controller_1a0538514bc1dd11a61e279e5f5d4d0948">addMaterial</link>(@ModelAttribute&#32;<link linkend="_classcom_1_1example_1_1demo_1_1_material">Material</link>&#32;material)&#32;{
+<anchor xml:id="__material_controller_8java_source_1l00063"/>00063 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;materialRepository.save(material);
+<anchor xml:id="__material_controller_8java_source_1l00064"/>00064 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;<emphasis role="stringliteral">&quot;redirect:/&quot;</emphasis>;
+<anchor xml:id="__material_controller_8java_source_1l00065"/>00065 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__material_controller_8java_source_1l00066"/>00066 
+<anchor xml:id="__material_controller_8java_source_1l00067"/>00067 
+<anchor xml:id="__material_controller_8java_source_1l00068"/>00068 
+<anchor xml:id="__material_controller_8java_source_1l00069"/>00069 }
+<anchor xml:id="__material_controller_8java_source_1l00070"/>00070 
+</programlisting></section>

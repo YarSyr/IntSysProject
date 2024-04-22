@@ -1,0 +1,112 @@
+.TH "com.example.demo.MaterialController" 3 "Version 0.1" "My Project" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+com.example.demo.MaterialController \- Класс контроллера для обработки HTTP запросов  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "String \fBlistMaterials\fP (Model model)"
+.br
+.RI "Метод, используемый при обработке запросов "
+.ti -1c
+.RI "String \fBadjustMaterials\fP (Model model, @RequestParam Long materialId, @RequestParam int quantityChange)"
+.br
+.RI "Метод, используемый при обработке запросов на настройку "
+.ti -1c
+.RI "String \fBshowAddMaterialForm\fP (Model model)"
+.br
+.RI "Метод, используемый при обработке запросов на добавление "
+.ti -1c
+.RI "String \fBaddMaterial\fP (@ModelAttribute \fBMaterial\fP material)"
+.br
+.RI "Метод, используемый при обработке запроса на добавление "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Класс контроллера для обработки HTTP запросов 
+.PP
+Definition at line \fB17\fP of file \fBMaterialController\&.java\fP\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "String com\&.example\&.demo\&.MaterialController\&.addMaterial (@ModelAttribute \fBMaterial\fP material)"
+
+.PP
+Метод, используемый при обработке запроса на добавление 
+.PP
+\fBParameters\fP
+.RS 4
+\fIПринимает\fP на вход объект модели а также параметры Post запроса 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Возвращает указатель перенаправления на гравную страницу 
+.RE
+.PP
+
+.PP
+Definition at line \fB62\fP of file \fBMaterialController\&.java\fP\&.
+.SS "String com\&.example\&.demo\&.MaterialController\&.adjustMaterials (Model model, @RequestParam Long materialId, @RequestParam int quantityChange)"
+
+.PP
+Метод, используемый при обработке запросов на настройку 
+.PP
+\fBParameters\fP
+.RS 4
+\fIПринимает\fP на вход объект модели а также параметры Post запроса 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Возвращает указатель перенаправления на гравную страницу 
+.RE
+.PP
+
+.PP
+Definition at line \fB37\fP of file \fBMaterialController\&.java\fP\&.
+.SS "String com\&.example\&.demo\&.MaterialController\&.listMaterials (Model model)"
+
+.PP
+Метод, используемый при обработке запросов 
+.PP
+\fBParameters\fP
+.RS 4
+\fIПринимает\fP на вход объект модели 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Возвращает название MVC шаблона 
+.RE
+.PP
+
+.PP
+Definition at line \fB26\fP of file \fBMaterialController\&.java\fP\&.
+.SS "String com\&.example\&.demo\&.MaterialController\&.showAddMaterialForm (Model model)"
+
+.PP
+Метод, используемый при обработке запросов на добавление 
+.PP
+\fBParameters\fP
+.RS 4
+\fIПринимает\fP на вход объект модели а также параметры Post запроса 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Возвращает название MVC шаблона 
+.RE
+.PP
+
+.PP
+Definition at line \fB52\fP of file \fBMaterialController\&.java\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for My Project from the source code\&.

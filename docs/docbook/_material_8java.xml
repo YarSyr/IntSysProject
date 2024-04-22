@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__material_8java" xml:lang="en-US">
+<title>src/main/java/com/example/demo/Material.java File Reference</title>
+<indexterm><primary>src/main/java/com/example/demo/Material.java</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_classcom_1_1example_1_1demo_1_1_material">com.example.demo.Material</link></para>
+
+<para>Класс объекта материала, используемый при работе с базой данных </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Packages    </title>
+        <itemizedlist>
+            <listitem><para>package <link linkend="_namespacecom_1_1example_1_1demo">com.example.demo</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_interfacecom_1_1example_1_1demo_1_1_material_repository" xml:lang="en-US">
+<title>com.example.demo.MaterialRepository Interface Reference</title>
+<indexterm><primary>com.example.demo.MaterialRepository</primary></indexterm>
+<para>
+
+<para>Репозиторий для работы с базой данных </para>
+ 
+</para>
+<para>Inheritance diagram for com.example.demo.MaterialRepository:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="interfacecom_1_1example_1_1demo_1_1_material_repository.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<section>
+<title>Detailed Description</title>
+
+<para>Репозиторий для работы с базой данных </para>
+<para>
+Definition at line <link linkend="__material_repository_8java_source_1l00007">7</link> of file <link linkend="__material_repository_8java_source">MaterialRepository.java</link>.</para>
+<para>
+The documentation for this interface was generated from the following file:</para>
+src/main/java/com/example/demo/<link linkend="__material_repository_8java">MaterialRepository.java</link></section>
+</section>
