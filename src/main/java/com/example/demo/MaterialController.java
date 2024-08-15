@@ -1,70 +1,108 @@
 package com.example.demo;
+
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.SpringApplication;
+import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.List;
-
-/*!
-	@brief Класс контроллера для обработки HTTP запросов
-*/
+import java.time.format.DateTimeFormatter;
 
 @Controller
 public class MaterialController {
     @Autowired
     private MaterialRepository materialRepository;
-    /*!
-        @brief Метод, используемый при обработке запросов
-        @param Принимает на вход объект модели
-        @return Возвращает название MVC шаблона
-    */
+
+    @Autowired
+    private InvoiceRepository invoiceRepository;
+
     @GetMapping("/")
     public String listMaterials(Model model) {
         List<Material> materials = materialRepository.findAll();
         model.addAttribute("materials", materials);
         return "materials";
     }
-    /*!
-        @brief Метод, используемый при обработке запросов на настройку
-        @param Принимает на вход объект модели а также параметры Post запроса
-        @return Возвращает указатель перенаправления на гравную страницу
-    */
+
     @PostMapping("/adjust")
-    public String adjustMaterials(Model model, @RequestParam Long materialId, @RequestParam int quantityChange) {
+    public String adjustMaterial(@RequestParam Long materialId, @RequestParam int quantityChange, @RequestParam String action, @RequestParam String invoiceNumber, Model model) {
+        if (invoiceNumber.isEmpty()) {
+            model.addAttribute("error", "Номер накладной обязателен.");
+            return listMaterials(model);
+        }
+
         Material material = materialRepository.findById(materialId).orElseThrow(() -> new IllegalArgumentException("Invalid material ID"));
+
+        if ("withdraw".equals(action)) {
+            quantityChange = -quantityChange;
+            if (material.getQuantity() < -quantityChange) {
+                model.addAttribute("error", "Недостаточное количество материала на складе для списания.");
+                return listMaterials(model);
+            }
+        }
+
         material.setQuantity(material.getQuantity() + quantityChange);
-        System.out.println(material.getQuantity() + quantityChange);
-        System.out.println(material);
         materialRepository.save(material);
+
+        // Сохранение накладной
+        System.out.println(invoiceNumber);
+        Invoice invoice = new Invoice(invoiceNumber);
+        invoiceRepository.save(invoice);
+
         return "redirect:/";
     }
 
-    /*!
-            @brief Метод, используемый при обработке запросов на добавление
-            @param Принимает на вход объект модели а также параметры Post запроса
-            @return Возвращает название MVC шаблона
-        */
     @GetMapping("/add")
     public String showAddMaterialForm(Model model) {
         model.addAttribute("material", new Material());
         return "add_material";
     }
-    /*!
-        @brief Метод, используемый при обработке запроса на добавление
-        @param Принимает на вход объект модели а также параметры Post запроса
-        @return Возвращает указатель перенаправления на гравную страницу
-    */
+
     @PostMapping("/add")
     public String addMaterial(@ModelAttribute Material material) {
         materialRepository.save(material);
         return "redirect:/";
     }
 
+    @PostMapping("/remove")
+    public String removeMaterial(@RequestParam Long materialId, Model model) {
+        Material material = materialRepository.findById(materialId).orElseThrow(() -> new IllegalArgumentException("Invalid material ID"));
+        if (material.getQuantity() != 0) {
+            model.addAttribute("error", "Количество материала должно быть равно нулю для удаления.");
+            return listMaterials(model);
+        }
+        materialRepository.delete(material);
+        return "redirect:/";
+    }
 
 
+
+    // Ваши другие методы контроллера
+
+    @GetMapping("/admin")
+    public String adminPage(Model model) {
+        List<Material> materials = materialRepository.findAll();
+        List<Invoice> invoices = invoiceRepository.findAll();
+        model.addAttribute("materials", materials);
+        model.addAttribute("invoices", invoices);
+        return "admin";
+    }
+
+    @Controller
+    public class AdminController {
+
+        private ConfigurableApplicationContext context;
+
+        public AdminController(ConfigurableApplicationContext context) {
+            this.context = context;
+        }
+
+        @GetMapping("/shutdown")
+        public void shutdown() {
+            SpringApplication.exit(context, () -> 0);
+        }
+    }
 }
-

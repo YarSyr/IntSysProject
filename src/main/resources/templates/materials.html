@@ -3,16 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <title>Материалы</title>
+    <script>
+        function validateForm() {
+            var invoiceNumber = document.getElementById("invoiceNumber").value;
+            if (invoiceNumber === "") {
+                alert("Пожалуйста, введите номер накладной.");
+                return false;
+            }
+            return true;
+        }
+    </script>
 </head>
+
 <body>
 <h2>Материалы на складе</h2>
 <a href="/add"><button>Добавить материал</button></a>
+<a href="/admin"><button>Администрирование</button></a>
+
+<div th:if="${error}" style="color: red;">
+    <p th:text="${error}"></p>
+</div>
+
 <table>
     <thead>
     <tr>
         <th>Название</th>
         <th>Количество</th>
-        <th>Изменить</th>
+        <th>Действия</th>
+        <th>Удалить</th>
     </tr>
     </thead>
     <tbody>
@@ -20,15 +38,25 @@
         <td th:text="${material.name}"></td>
         <td th:text="${material.quantity}"></td>
         <td>
-            <form action="/adjust" method="post">
+            <form id="adjustForm" action="/adjust" method="post" onsubmit="return validateForm();">
                 <input type="hidden" name="materialId" th:value="${material.id}">
+                <input type="hidden" name="invoiceNumber" th:value="${invoiceNumber}">
                 <input type="number" name="quantityChange" value="0">
-                <button type="submit" name="action" value="decrease">Списать</button>
-                <button type="submit" name="action" value="increase">Зачислить</button>
+                <button type="submit" name="action" value="deposit">Зачислить</button>
+                <button type="submit" name="action" value="withdraw">Списать</button>
+            </form>
+        </td>
+        <td>
+            <form action="/remove" method="post">
+                <input type="hidden" name="materialId" th:value="${material.id}">
+                <button type="submit" th:disabled="${material.quantity != 0}">Удалить</button>
             </form>
         </td>
     </tr>
     </tbody>
 </table>
+
+<h3>Номер накладной</h3>
+<input type="text" id="invoiceNumber" name="invoiceNumber" form="adjustForm">
 </body>
 </html>

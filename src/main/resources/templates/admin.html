@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Администрирование</title>
+</head>
+<body>
+<h2>Материалы</h2>
+<table>
+    <thead>
+    <tr>
+        <th>Название</th>
+        <th>Количество</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="material : ${materials}">
+        <td th:text="${material.name}"></td>
+        <td th:text="${material.quantity}"></td>
+    </tr>
+    </tbody>
+</table>
+
+<h2>Накладные</h2>
+<table>
+    <thead>
+    <tr>
+        <th>Номер</th>
+        <th>Дата</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="invoice : ${invoices}">
+        <td th:text="${invoice.invoiceNumber}"></td>
+        <td th:text="${invoice.createdAt}"></td>
+    </tr>
+    </tbody>
+</table>
+<a href="/"><button>Назад</button></a>
+<a href="/shutdown"><button>Выключить сервер</button></a>
+</body>
+</html>
